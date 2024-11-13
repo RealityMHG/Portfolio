@@ -3,6 +3,8 @@ window.addEventListener('DOMContentLoaded', () => {
     const navBar = document.querySelector('.navbar');
     const navBarLinks = document.querySelectorAll('.navbar a');
 
+    const videos = document.querySelectorAll('video');
+
     window.addEventListener('resize', () => {
         updateSize();
     });
@@ -10,6 +12,16 @@ window.addEventListener('DOMContentLoaded', () => {
     navBarLinks.forEach((link) => {
         link.addEventListener('click', () => {
             navBar.classList.toggle('active');
+        });
+    });
+
+    videos.forEach((video) => {
+        video.addEventListener('mouseenter', () => {
+            video.play();
+        });
+
+        video.addEventListener('mouseleave', () => {
+            video.pause();
         });
     });
 
