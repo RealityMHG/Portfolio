@@ -10,10 +10,10 @@
 }
 
 :root{
-    --bg-color: #000;
-    --second-bg-color: #161616;
-    --text-color: #fff;
-    --main-color: #4c2270;
+    --bg-color: #FAF9F6;
+    --second-bg-color: #E2DFD2;
+    --text-color: #212A37;
+    --main-color: #48c9b0;
 }
 
 html{
@@ -46,7 +46,7 @@ html::-webkit-scrollbar-thumb {
     left: 0;
     width: 100%;
     padding: 1.8rem 9%;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.2);
     filter: drop-shadow(10px);
     display: flex;
     justify-content: space-between;
@@ -633,7 +633,7 @@ span{
 
 .contact h2{
     margin-bottom: 3rem;
-    color: #fff;
+    color: var(--text-color);
 }
 
 .contact form{
